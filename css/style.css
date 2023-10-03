@@ -12,6 +12,15 @@ body {
   color: #fff;
   height: 94px;
 }
+.header {
+  min-height: 100vh;
+}
+.header-image {
+  background-image: url(../img/header-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 .header-nav {
   display: flex;
   flex-basis: 100%;
