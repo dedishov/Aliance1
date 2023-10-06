@@ -25,12 +25,13 @@ body {
   top: 0;
   z-index: 2;
   border-bottom: 1px solid rgba(235, 235, 240, 0.20);
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, height 0.2s;
 }
 .navbar-light {
   background-color: #fff;
   color: #292D33;
   opacity: 0.95;
+  height: 74px;
 }
 .navbar-light .header-logo-path {
   fill: #292D33;
@@ -57,7 +58,9 @@ body {
   z-index: 0;
 }
 .header-logo {
-  padding: 25px 50px;
+  display: flex;
+  align-items: center;
+  padding: 0px 50px;
   border-right: 1px solid rgba(235, 235, 240, 0.20);
   height: 100%;
 }
@@ -98,7 +101,7 @@ body {
   display: inline-block;
   cursor: pointer;
 }
-.navbar-buttun {
+.navbar-button {
   flex-shrink: 0;
   height: 100%;
 }
