@@ -30,6 +30,7 @@ body {
 .navbar-light {
   background-color: #fff;
   color: #292D33;
+  opacity: 0.95;
 }
 .navbar-light .header-logo-path {
   fill: #292D33;
