@@ -7,6 +7,12 @@
   font-weight: normal;
   font-style: normal;
   }
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('../fonts/BebasNeueRegular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  }
 body {
   font-family: 'Noto Sans', sans-serif;
 }
@@ -44,13 +50,13 @@ body {
   background-image: url('../img/header-bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom -55px;
   position: relative;
 }
 .header-image::before {
   content: "";
   position: absolute;
-  background: rgba(41, 45, 51, 0.60);
+  background: rgba(41, 45, 51, 0.75);
   top: 0;
   left: 0;
   width: 100%;
@@ -104,9 +110,11 @@ body {
 .navbar-button {
   flex-shrink: 0;
   height: 100%;
+  padding: 25px 50px;
 }
 .header-button {
   height: 100%;
+  padding: 26px 60px;
 }
 .separator {
   background: #5C8EE5;
@@ -125,6 +133,8 @@ body {
   font-size: 80px;
   line-height: 120%;
   margin: 30px 0;
+  letter-spacing: 0.8px;
+  word-spacing: -1.6px;
 }
 .header-text {
   max-width: 720px;
@@ -144,13 +154,16 @@ body {
   position: relative;
 }
 .header-features-item {
-  padding: 30px 50px;
+  padding: 28px 50px;
+  width: 288px;
   border: 1px solid rgba(235, 235, 240, 0.20);
 }
 .header-features-text {
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 160%;
+  margin-bottom: 0;
+  margin-top: 18px;
 }
 .header-features-item:not(:last-child) {
   border-right: none;
@@ -164,6 +177,7 @@ body {
   font-size: 60px;
   line-height: 120%;
   color: #292D33;
+  margin: 25px 0 51px;
 }
 .steps {
   display: flex;
@@ -177,10 +191,12 @@ body {
 .steps-num {
   font-family: 'Bebas Neue';
   font-size: 48px;
+  font-weight: 400;
   line-height: 120%;
   color: #5C8EE5;
   display: flex;
   align-items: center;
+  margin-bottom: 15px;
 }
 .steps-num::after {
   content: '';
@@ -192,18 +208,21 @@ body {
 .steps-title {
   font-weight: 400;
   font-size: 28px;
-  line-height: 160%;
+  line-height: 163%;
   color: #292D33;
-  margin-top: 30px;
+  margin-top: 34px;
   margin-bottom: 10px;
+  max-width: 300px;
+
 }
 .steps-text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 160%;
+  line-height: 162%;
   color: #828A99;
   margin-top: 10px;
   margin-bottom: 20px;
+  padding-right: 30px;
 }
 .steps-link {
   display: flex;
