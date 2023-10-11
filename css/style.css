@@ -384,7 +384,7 @@ body {
     color: #292D33;
   }
   .mobile-submenu {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
     padding-left: 1rem;
     margin-top: 1rem;
@@ -410,7 +410,10 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: .625rem;
+  }
+  .mobile-info:nth-child(2) {
+    margin-bottom: 1.25rem;
   }
   .mobile-info-address, 
   .mobile-info-email {
@@ -420,5 +423,10 @@ body {
     font-size: 14px;
     line-height: 160%;
     color: #292D33;
+  }
+  .mobile-info-social-media {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1.3rem;
   }
 }
