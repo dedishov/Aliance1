@@ -14,11 +14,13 @@ const lightModeOff = (event) => {
 
 const openMenu = (event) => { // Функция открывания меню
   menu.classList.add('is-open'); // Вешает класс is-open
+  mMenuToggle.classList.add('close-menu');
   document.body.style.overflow = 'hidden' // Запрещаем прокрутку сайта под меню
   lightModeOn();
 };
 const closeMenu = (event) => { // Функция закрывания меню
   menu.classList.remove('is-open'); // Убирает класс is-open
+  mMenuToggle.classList.remove('close-menu');
   document.body.style.overflow = '' // возвращает прокрутку сайта под меню
   lightModeOff();
 };
@@ -29,9 +31,5 @@ window.addEventListener('scroll', () => {
 
 mMenuToggle.addEventListener('click', (event) => {
   event.preventDefault();
-  if (menu.classList.contains('is-open')) { // если меню открыто...
-    closeMenu(); // закрыть меню
-  } else { // иначе...
-    openMenu(); // открыть меню
-  }
+  menu.classList.contains('is-open') ? closeMenu() : openMenu();
 });
