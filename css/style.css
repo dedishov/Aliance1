@@ -191,6 +191,22 @@ body {
   justify-content: center;
   cursor: pointer;
 }
+.steps-slider-buttons {
+  display: none;
+  height: 40px;
+  justify-content: end;
+
+}
+.steps-slider-button-prev, 
+.steps-slider-button-next {
+  width: 60px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: #5C8EE5;
+}
 .header-features-item {
   padding: 1.75rem 3.125rem;
   min-height: 100%;
@@ -224,7 +240,7 @@ body {
   gap: 1.875rem;
 }
 .steps-item {
-  max-width: 20.625rem;
+  max-width: 300px;
 }
 .steps-num {
   font-family: 'Bebas Neue';
@@ -305,6 +321,9 @@ body {
   .header-phone {
     margin-right: 2rem;
   }
+  .container {
+    max-width: 90rem;
+  }
 }
 @media (max-width: 1200px) {
   .container {
@@ -321,6 +340,9 @@ body {
     padding-right: 2rem;
   }
   .slider-buttons {
+    display: flex;
+  }
+  .steps-slider-buttons {
     display: flex;
   }
 }
@@ -471,9 +493,12 @@ body {
     max-width: 90%;
   }
   .header-title {
-    font-size: 2.3rem;
+    font-size: 3rem;
   }
   .header-content {
-    padding-top: 2rem;
+    padding-top: 2.5rem;
+  }
+  .steps-text {
+    font-size: 14px;
   }
 }

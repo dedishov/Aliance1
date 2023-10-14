@@ -219,29 +219,49 @@
     <div class="container">
       <div class="separator"></div>
       <h2 class="section-title">схема работы</h2>
-      <ol class="steps">
-        <li class="steps-item">
-          <span class="steps-num">01</span>
-          <h3 class="steps-title">Знакомство</h3>
-          <p class="steps-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.</p>
-          <a href="#" class="steps-link">Оставить заявку</a>
-        </li>
-        <li class="steps-item">
-          <span class="steps-num">02</span>
-          <h3 class="steps-title">Заключение договора</h3>
-          <p class="steps-text">Лишь интерактивные прототипы призваны к ответу.</p>
-        </li>
-        <li class="steps-item">
-          <span class="steps-num">03</span>
-          <h3 class="steps-title">Производство</h3>
-          <p class="steps-text">А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на независимые элементы.</p>
-        </li>
-        <li class="steps-item">
-          <span class="steps-num">04</span>
-          <h3 class="steps-title">Доставка</h3>
-          <p class="steps-text">В частности, экономическая повестка сегодняшнего дня говорит о возможностях приоритизации разума над эмоциями.</p>
-        </li>
-      </ol>
+      <!-- Основной блок слайдера -->
+      <div class="steps-swiper swiper">
+        <!-- Обертка слайдера -->
+        <ul class="swiper-wrapper steps">
+          <!-- Слайды -->
+          <li class="swiper-slide steps-item">
+            <span class="steps-num">01</span>
+            <h3 class="steps-title">Знакомство</h3>
+            <p class="steps-text">Безусловно, сплочённость команды профессионалов позволяет оценить значение форм воздействия.</p>
+            <a href="#" class="steps-link">Оставить заявку</a>
+          </li>
+          <li class="swiper-slide steps-item">
+            <span class="steps-num">02</span>
+            <h3 class="steps-title">Заключение договора</h3>
+            <p class="steps-text">Лишь интерактивные прототипы призваны к ответу.</p>
+          </li>
+          <li class="swiper-slide steps-item">
+            <span class="steps-num">03</span>
+            <h3 class="steps-title">Производство</h3>
+            <p class="steps-text">А также стремящиеся вытеснить традиционное производство, нанотехнологии функционально разнесены на независимые элементы.</p>
+          </li>
+          <li class="swiper-slide steps-item">
+            <span class="steps-num">04</span>
+            <h3 class="steps-title">Доставка</h3>
+            <p class="steps-text">В частности, экономическая повестка сегодняшнего дня говорит о возможностях приоритизации разума над эмоциями.</p>
+          </li>
+        </ul>
+
+        <!-- Steps/ Кнопки навигации вперед/назад-->
+        <div class="steps-slider-buttons">
+          <div class="steps-slider-button-prev">
+            <svg width="30" height="20">
+              <use href="img/sprite.svg#steps-arrow-prev"></use>
+            </svg>
+          </div>
+          <div class="steps-slider-button-next">
+            <svg width="30" height="20">
+              <use href="img/sprite.svg#steps-arrow-next"></use>
+            </svg>
+          </div>
+        </div>
+        <!-- /.steps-slider-buttons -->
+      </div>
     </div>
     <!-- /.container -->
   </section>
