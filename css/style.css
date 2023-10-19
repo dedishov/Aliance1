@@ -60,8 +60,8 @@ body {
   display: none;
 }
 .logo-svg {
-  width: 9rem;
-  height: 2.75rem;
+  width: 10rem;
+  height: 3.5rem;
 }
 .navbar-light .header-logo-path {
   fill: #292D33;
@@ -207,7 +207,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
-  line-height: 160%;
+  line-height: 157%;
   margin-bottom: 3.125rem;
 }
 .header-features {
@@ -457,7 +457,7 @@ align-items: center;
     display: none;
   }
   .navbar {
-    height: 5rem;
+    height: 5.8rem;
   }
   .navbar-button {
     padding-left: 2rem;
@@ -487,13 +487,20 @@ align-items: center;
     flex-grow: 1;
     justify-content: center;
   }
+  .logo-svg {
+    max-width: 13rem;
+  }
+  .navbar-button {
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+  }
   .mobile-menu-toggle {
     width: 80px;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 1.375rem 1.75rem;
+    padding: 2.3rem 2.5rem;
     border-right: 1px solid rgba(235, 235, 240, 0.20);
   }
   .navbar-light .mobile-menu-line {
@@ -603,32 +610,40 @@ align-items: center;
   .close-menu .mobile-menu-line:nth-child(3) {
     transform: rotate(-45deg) translateY(-17.5px);
   }
+  .separator {
+    width: 8.375rem;
+    height: 0.125rem;
+}
 }
 @media (max-width: 770px) {
   .container {
     max-width: 40rem;
   }
   .header-title {
-    font-size: 4rem;
+    font-size: 3.89rem;
+    line-height: 4.85rem;
+    margin: 1.2rem 0;
   }
   .header-content {
-    padding-top: 3rem;
+    padding-top: 4rem;
   }
   .card {
     flex-basis: 100%;
   }
+  .header-button {
+    width: 100%;
+    font-size: 1.2rem;
+}
 }
 @media (max-width: 570px) {
   .container {
-    max-width: 90%;
-  }
-  .header-title {
-    font-size: 3rem;
-  }
-  .header-content {
-    padding-top: 2.5rem;
+    max-width: 92%;
   }
   .steps-text {
     font-size: 14px;
+  }
+  .header-text {
+    font-size: 1.165rem;
+    margin-bottom: 2.5rem;
   }
 }
